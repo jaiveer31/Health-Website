@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        background-color: #0091EA;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 14px;
+        background-color: #E0E0E0;
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+    <h2>Insurance details for Hospitalization</h2>
+
+    <div>
+        <form action="backend.php">
+            <label for="fname">Patient Name</label>
+            <input type="text" id="pname" name="patientname" placeholder="Patient Name">
+
+            <label for="lname">Policy Holder Name</label>
+            <input type="text" id="phname" name="policyholdername" placeholder="Policy Holder Name">
+            <label for="lname">Policy Number</label>
+            <input type="text" id="pnumber" name="policyholdername" placeholder="Policy Number">
+            <label for="lname">Member Number</label>
+            <input type="text" id="mnumber" name="policyholdername" placeholder="Member Number">
+            <label for="lname">Valid from</label><br><br>
+            <input type="date" id="vfrom" name="validfrom" placeholder="Valid From">
+            <br><br>
+            <label for="Insurance">Gender</label>
+            <select id="Insurance" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                <option value="Rather not say">Rather not say</option>
+            </select>
+            <label for="Insurance">Company Name</label>
+            <select id="Insurance" name="Insurance">
+                <option value="HDFC Ergo">HDFC Ergo</option>
+                <option value="Care Health Insurance">Care Health Insurance </option>
+                <option value="Max Bupa">Max Bupa</option>
+                <option value="Manipal Cigna Health Insurance ">Manipal Cigna Health Insurance </option>
+                <option value="Edelweiss General Insurance">Edelweiss General Insurance</option>
+                <option value="Star Health Insurance">Star Health Insurance</option>
+                <option value="Reliance General Insurance">Reliance General Insurance</option>
+                <option value="SBI General Insurance">SBI General Insurance</option>
+                <option value="Aditya Birla Health Insurance">Aditya Birla Health Insurance</option>
+                <option value="Acko General Insurance">Acko General Insurance</option>
+                <option value="Kotak Mahindra General Insurance">Kotak Mahindra General Insurance</option>
+                <option value="Bharti AXA General Insurance">Bharti AXA General Insurance</option>
+                <option value="Tata AIG General Insurance">Tata AIG General Insurance</option>
+                <option value="United India Insurance Company">United India Insurance Company</option>
+            </select>
+            <div>I agree to the <a
+                    href="https://www.libertyinsurance.in/health-insurance-guide/health-insurance-jargons.html">terms
+                    and conditions</a>:<input type="checkbox" name="myagreement">
+            </div><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
