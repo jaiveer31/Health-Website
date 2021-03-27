@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Home Page
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <center>
+            <i class="fa fa-ambulance" aria-hidden="true"></i>
+            <h2>EMED.COM</h2>
+        </center>
+        <div>
+            <div class="topnav">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="../patient.php">Medical Page<i class="fa fa-house" aria-hidden="true"></i></a>
+                <div class="dropdown">
+                    <div class="dropbtn">Category <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="covid.php" style="color: blanchedalmond;font-size: medium;">Covid Supply</a>
+                        <a href="diabetes.php" style="color: blanchedalmond;font-size: medium;">Diabetics</a>
+                        <a href="cold.php" style="color: blanchedalmond; font-size: medium;">Cold & Fever</a>
+                        <a href="bp.php" style="color: blanchedalmond;font-size: medium;">Blood pressure</a>
+                        <a href="cardio.php" style="color: blanchedalmond;font-size: medium;">CardioVascular
+                            Meds</a>
+                    </div>
+                </div>
+                <a href="https://www.medscape.com/">MedUpdates <i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
+                <a href="cart.php">Cart <i class="fa fa-cart" aria-hidden="true"></i></a>
+                <a href="log.php">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/med5.jpeg" style="width:100%;height:400px;">
+            <div class="text">offer item 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/med6.jpeg" style="width:100%;height:400px;">
+            <div class="text">offer item 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/38b226df-afe0-4e93-8215-1f4e254ff4da.jpg" style="width:100%;height:400px;">
+            <div class="text">offer item 3</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <br>
+    <center><b>Lightning Offers of the Week!</b></center>
+    <br>
+    <div class="columns">
+        <ul class="price">
+            <li><img src="images/triamterene.jpg"></li>
+            <li class="grey">Rs. 299</li>
+            <li>Triamterene</li>
+            <li class="grey"><a href="bp.php" class="button">CheckOut</a></li>
+        </ul>
+    </div>
+
+    <div class="columns">
+        <ul class="price">
+            <li><img src="images/acetaminophen.jpg"></li>
+            <li class="grey">Rs. 299</li>
+            <li>Acetaminophen</li>
+            <li class="grey"><a href="cold.php" class="button">CheckOut</a></li>
+        </ul>
+    </div>
+
+    <div class="columns">
+        <ul class="price">
+            <li><img src="images/chlorthalindone.jpg"></li>
+            <li class="grey">Rs. 299</li>
+            <li>hlorthalindone</li>
+            <li class="grey"><a href="bp.php" class="button">CheckOut</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <center>Saving Lives Even in this LockDown!</center>
+        <br>
+        <marquee scrollamount="15">
+            <h4>We ensure contact free delivery and highest quality. Daily offers on medicine avaliable. Avail now</h4>
+        </marquee>
+        <div>
+            <script>
+                showSlides(slideIndex);
+            </script>
+</body>
+
+</html>
